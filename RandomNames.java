@@ -1,4 +1,4 @@
-public class NameGenerator {
+public class RandomNames {
 	
 	public static void main(String[] args) {
 		String sourceString = "";
@@ -6,12 +6,12 @@ public class NameGenerator {
 		int namesCount = 20;
 		if(args.length == 0){
 			System.out.println("--------------USAGE----------------");
-			System.out.println("Use 'NameSize' argument to set character count of name (like 'NameSize10')");
+			System.out.println("Use 'NameSize' argument to set character count of name, like 'NameSize10'");
 			System.out.println("");
-			System.out.println("Use 'NamesCount' argument to set the number of names to generate(like 'NamesCount10')");
+			System.out.println("Use 'NamesCount' argument to set the number of names to generate, like 'NamesCount10'");
 			System.out.println("");
 			System.out.println("The name generator will generate names based on tags, so you need to feed the algorithm with some");
-			System.out.println("tags, to do so just write the tags as arguments (like java NameGenerator house car bike)");
+			System.out.println("tags, to do so just write the tags as arguments, like 'java RandomNames NameSize5 NamesCount10 house car bike'");
 			System.out.println("-----------------------------------");
 		} else{
 			for(int i = 0; i < args.length; i++){
